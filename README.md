@@ -16,13 +16,13 @@ Dump traffic packets by tcpdump!
 You can use like: ip netns 77d3b59709c6 exec tcpdump -i eth0 -venn -w ~/test.cap
 ```
 
-### Get the configration for Wireshack 
+### Get the configration for Wireshark 
 ```
 $ ./decrypt-ipsec.sh config 77d3b59709c6
 
 Get Net NameSpace: /var/run/netns/77d3b59709c6
 ######################################
-####Get ESP config for WireShack!####
+####Get ESP config for WireShark!####
 ######################################
 src 10.42.97.15 dst 172.31.2.184
 SPI: 0xc150f464}
@@ -38,7 +38,7 @@ Authentication: Any 128 bit authentication
 =========================
 ```
 
-### Open wireShack to set ESP protocol decoding information
-Open wireShack: `Edit -> Preferences -> Protocol -> ESP`
+### Open Wireshark to set ESP protocol decoding information
+Open Wireshark: `Edit -> Preferences -> Protocol -> ESP`
 ![](https://ws1.sinaimg.cn/large/006tNc79ly1fhtub2l506j30le08ut9a.jpg)
 ![](https://ws3.sinaimg.cn/large/006tNc79ly1fhtubipqgrj31au07kq3y.jpg)

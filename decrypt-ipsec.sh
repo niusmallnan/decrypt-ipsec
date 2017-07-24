@@ -9,7 +9,7 @@ config() {
     load_ns
 
     echo "######################################"
-    echo "####Get ESP config for WireShack!####"
+    echo "####Get ESP config for Wireshark!####"
     echo "######################################"
 
     BASE_CMD="ip netns exec ${ROUTER_CONTAINER_ID} ip xfrm stat"
