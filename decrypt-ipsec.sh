@@ -51,7 +51,7 @@ load_ns() {
 
 check_param() {
     if [ -z "$ROUTER_CONTAINER_ID" ]; then
-        print_error "Must specific ROUTER_CONTAINER_ID"
+        print_error "There is no ipsec-router container"
     fi
 }
 

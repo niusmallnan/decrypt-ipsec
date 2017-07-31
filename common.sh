@@ -7,8 +7,8 @@ err() {
 
 usage() {
     err "Usage: "
-    err "\t$0 config <router-container-id>"
-    err "\t$0 dump <router-container-id>"
+    err "\t$0 config"
+    err "\t$0 dump"
     exit 1
 }
 
@@ -18,7 +18,7 @@ print_error() {
 }
 
 main() {
-	ROUTER_CONTAINER_ID="$2"
+	ROUTER_CONTAINER_ID=$(docker ps -a | grep ipsec-router | awk '{print $1}')
     case $1 in
         config)
             "$@"
