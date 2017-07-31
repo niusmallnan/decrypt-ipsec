@@ -1,16 +1,8 @@
 # decrypt-ipsec
 
-### Get the IPSec-Router container
-```
-$ docker ps
-....
-77d3b59709c6        rancher/net:v0.11.3    ....      r-ipsec-ipsec-router-1-7c40d515
-....
-```
-
 ### Get the pcap file by tcpdump
 ```
-$ ./decrypt-ipsec.sh dump 77d3b59709c6
+$ ./decrypt-ipsec.sh dump
 
 Dump traffic packets by tcpdump!
 You can use like: ip netns 77d3b59709c6 exec tcpdump -i eth0 -venn -w ~/test.cap
@@ -18,7 +10,7 @@ You can use like: ip netns 77d3b59709c6 exec tcpdump -i eth0 -venn -w ~/test.cap
 
 ### Get the configration for Wireshark 
 ```
-$ ./decrypt-ipsec.sh config 77d3b59709c6
+$ ./decrypt-ipsec.sh config
 
 Get Net NameSpace: /var/run/netns/77d3b59709c6
 ######################################
